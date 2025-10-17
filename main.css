@@ -1,0 +1,49 @@
+:root {
+  --green: #00FF00;
+  --white: #FFFFFF;
+  --black: #000000;
+  --blue: #0074D9;
+  --lightBlue: #E0F7FA;
+}
+
+/* Default styles */
+body {
+  background-color: var(--bg);
+  color: var(--fontColor);
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+li {
+  list-style: circle;
+}
+
+.list {
+  list-style: square;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: var(--fontColor);
+  color: var(--bg);
+  border: none;
+  border-radius: 5px;
+}
+
+/* Theme definitions */
+.light-theme {
+  --bg: var(--white);
+  --fontColor: var(--black);
+}
+
+.dark-theme {
+  --bg: var(--black);
+  --fontColor: var(--green);
+}
+
+.medium-theme {
+  --bg: var(--lightBlue);
+  --fontColor: var(--blue);
+}
